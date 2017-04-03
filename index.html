@@ -376,5 +376,22 @@
         CITY_MAP_CENTER_LAT= 28.4595,
         CITY_MAP_CENTER_LNG=77.0266;
 	</script>
+	<script>
+		function updateMyWorkEx(){
+var df= new Date("7/1/2012");
+var dt = new Date();   
+
+var allMonths= dt.getMonth() - df.getMonth() + (12 * (dt.getFullYear() - df.getFullYear()));
+var allYears= dt.getFullYear() - df.getFullYear();
+var partialMonths = dt.getMonth() - df.getMonth();
+
+if (partialMonths < 0) {
+    allYears--;
+    partialMonths = partialMonths + 12;
+}
+$("#work-ex").text(allYears+"."+partialMonths);
+	</script>
+	
+	
 </body>
 </html>	
