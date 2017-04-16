@@ -392,32 +392,13 @@ if (partialMonths < 0) {
 $("#work-ex").text(allYears+"."+partialMonths);
 			}
 		updateMyWorkEx();
-		
-		
-		Notification.requestPermission();
-function test(){
-var z = new Notification("Anuj Looking for Job Change",{
-	body: "Hire Me",
-	icon: "https://scontent.fdel1-1.fna.fbcdn.net/v/t31.0-8/13308654_1168138356550985_7413641438485410762_o.jpg?oh=a62f033da33c09bc03dea09beb69fd51&oe=5989944B",
-	tag:"anuj"
-	});
-z.onclick = function(){
-location.href = "https://www.linkedin.com/in/anuj-sachan-04a3a224/"
-}
-}
-
-
-setInterval(function(){
-test();
-},1000)
-
-
-
-
-
-
+	
 	</script>
 	
+	<script src="https://clientcdn.pushengage.com/core/10099.js"></script>
+<script>
+_pe.subscribe();
+</script>
 	
 </body>
 </html>	
